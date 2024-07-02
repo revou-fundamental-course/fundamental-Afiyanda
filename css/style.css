@@ -1,3 +1,7 @@
+main {
+  padding: 32px;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -5,7 +9,12 @@
 }
 
 .logo-icon {
-  margin-right: auto;
+  height: 50px;
+  width: 50px;
+
+  background-image: url(../assets/yuna.png);
+  background-size: cover;
+  border-radius: 50%;
 }
 
 nav > a {
@@ -32,5 +41,19 @@ nav > a {
 .profile-icon {
   height: 50px;
   width: 50px;
-  border: 1px solid;
+
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.profile-1 {
+  background-image: url(../assets/yuna.png);
+}
+
+.profile-2 {
+  background-image: url(../assets/yuna2.png);
+}
+
+.profile-3 {
+  background-image: url(../assets/yuna3.png);
 }
