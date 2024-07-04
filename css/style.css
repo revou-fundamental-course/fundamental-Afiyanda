@@ -47,13 +47,46 @@ nav > a {
 }
 
 .profile-1 {
-  background-image: url(../assets/yuna.png);
+  background-image: url(../assets/yuna1.png);
 }
 
 .profile-2 {
-  background-image: url(../assets/yuna2.png);
+  background-image: url(../assets/chy.png);
 }
 
 .profile-3 {
-  background-image: url(../assets/yuna3.png);
+  background-image: url(../assets/pixells.png);
+}
+
+.profile-4 {
+  background-image: url(../assets/mody.png);
+}
+
+.profile-5 {
+  background-image: url(../assets/muridh.png);
+}
+
+.profile-6 {
+  background-image: url(../assets/april.png);
+}
+
+.profile-7 {
+  background-image: url(../assets/aiko.png);
+}
+
+.profile-8 {
+  background-image: url(../assets/deska.png);
+}
+
+.profile-9 {
+  background-image: url(../assets/hinaru.png);
+}
+
+.divider {
+  flex: 2;
+}
+@media only screen and(max-width:320px) {
+  .nav-container {
+    flex-direction: column;
+  }
 }

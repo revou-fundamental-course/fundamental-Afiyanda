@@ -14,7 +14,6 @@
       <nav>
         <a>Home</a>
         <a href="#our-profile">Our Profile</a>
-        <a>Portofolio</a>
         <a>Message Us</a>
       </nav>
     </header>
@@ -25,13 +24,16 @@
       <!-- ini home content -->
       <section>
         <header>
-          <h1>Hi User, Welcome to Website</h1>
+          <h1>Hi User, Welcome to Numberic Seal</h1>
         </header>
 
         <article>
-          <p>Ini adalah website portofolio saya</p>
+          <p>Ini adalah website numberic seal</p>
 
           <div class="banner-container"></div>
+          <div class="banner-item" style="background-image: url(assets/numberic.png)"></div>
+          <div class="banner-item" style="background-image: url(assets/all-removebg-preview.png)"></div>
+          <div class="banner-item" style="background-image: url(assets/logo.png)"></div>
         </article>
       </section>
 
@@ -44,23 +46,82 @@
         <article class="profile-content">
           <div class="profile-item">
             <div class="profile-icon profile-1"></div>
-            <p>Profile 1</p>
+            <p>Yuna</p>
           </div>
 
           <div class="profile-item">
             <div class="profile-icon profile-2"></div>
-            <p>Profile 2</p>
+            <p>Chy</p>
           </div>
 
           <div class="profile-item">
             <div class="profile-icon profile-3"></div>
-            <p>Profile 3</p>
+            <p>Pixells</p>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-icon profile-4"></div>
+            <p>Mody</p>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-icon profile-5"></div>
+            <p>Muridh</p>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-icon profile-6"></div>
+            <p>April</p>
+          </div>
+          <div class="profile-item">
+            <div class="profile-icon profile-7"></div>
+            <p>Aiko</p>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-icon profile-8"></div>
+            <p>Deska</p>
+          </div>
+
+          <div class="profile-item">
+            <div class="profile-icon profile-9"></div>
+            <p>Hinaru</p>
           </div>
         </article>
       </section>
       <!-- ini portofolio -->
 
       <!-- ini message us -->
+
+      <section>
+        <header>
+          <h1>Message Us</h1>
+        </header>
+
+        <article style="display: flex; justify-content: space-between; flex-direction: column">
+          <form>
+            <table>
+              <tr>
+                <td><label for="firstname">Firstname : </label></td>
+                <td><input type="text" id="firstname" required /></td>
+              </tr>
+
+              <tr>
+                <td><label for="lastname">Lastname : </label></td>
+                <td><input type="text" id="lastname" required /></td>
+              </tr>
+              <tr>
+                <td rowspan="2">
+                  <button type="button" onclick="nextSlide(1);">Submit</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+
+          <div id="result" style="border: 1px solid; height: 200px; width: 300px"></div>
+        </article>
+      </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
