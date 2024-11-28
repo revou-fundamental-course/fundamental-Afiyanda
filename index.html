@@ -12,9 +12,9 @@
       <div class="logo-icon"></div>
 
       <nav>
-        <a>Home</a>
+        <a href="#home">Home</a>
         <a href="#our-profile">Our Profile</a>
-        <a>Message Us</a>
+        <a href="#message-us">Message Us</a>
       </nav>
     </header>
 
@@ -22,18 +22,17 @@
 
     <main>
       <!-- ini home content -->
-      <section>
+      <section id="home">
         <header>
           <h1>Hi User, Welcome to Numberic Seal</h1>
         </header>
 
         <article>
           <p>Ini adalah website numberic seal</p>
-
-          <div class="banner-container"></div>
-          <div class="banner-item" style="background-image: url(assets/numberic.png)"></div>
-          <div class="banner-item" style="background-image: url(assets/all-removebg-preview.png)"></div>
-          <div class="banner-item" style="background-image: url(assets/logo.png)"></div>
+          <p>Kami menyediakan berbagai layanan digital yang inovatif dan modern. Nikmati kemudahan dan kenyamanan hanya di <strong>Numberic Seal</strong>.</p>
+          <div class="banner-container">
+            <div class="banner-item" style="background-image: url(assets/logo.png)"></div>
+          </div>
         </article>
       </section>
 
@@ -44,81 +43,99 @@
           <h1>Our Profile</h1>
         </header>
         <article class="profile-content">
-          <div class="profile-item">
+          <a href="https://youtube.com/@everyunaa?si=3KE7EMKEw1O-Mmr-" class="profile-item" target="_blank" title="Yuna's YouTube">
             <div class="profile-icon profile-1"></div>
             <p>Yuna</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://youtube.com/@03chy333?si=205PGKNl9lwxfuaK" class="profile-item" target="_blank" title="Chy's YouTube">
             <div class="profile-icon profile-2"></div>
             <p>Chy</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://youtube.com/@forgottenpixells?si=RGrtUmWnh98SS-K8" class="profile-item" target="_blank" title="Pixells's YouTube">
             <div class="profile-icon profile-3"></div>
             <p>Pixells</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://example.com" class="profile-item" target="_blank" title="Mody's YouTube">
             <div class="profile-icon profile-4"></div>
             <p>Mody</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://example.com" class="profile-item" target="_blank" title="Muridh's YouTube">
             <div class="profile-icon profile-5"></div>
             <p>Muridh</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://example.com" class="profile-item" target="_blank" title="April's YouTube">
             <div class="profile-icon profile-6"></div>
             <p>April</p>
-          </div>
-          <div class="profile-item">
+          </a>
+
+          <a href="https://example.com" class="profile-item" target="_blank" title="Aiko's YouTube">
             <div class="profile-icon profile-7"></div>
             <p>Aiko</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://youtube.com/@deskaajinamoto?si=yREGrLaN2SSWENu6" class="profile-item" target="_blank" title="Deska's YouTube">
             <div class="profile-icon profile-8"></div>
             <p>Deska</p>
-          </div>
+          </a>
 
-          <div class="profile-item">
+          <a href="https://example.com" class="profile-item" target="_blank" title="Hinaru's YouTube">
             <div class="profile-icon profile-9"></div>
             <p>Hinaru</p>
-          </div>
+          </a>
+          <a href="https://youtube.com/@kanzakiactivities?si=Qa88U2YwVoLbhGxF" class="profile-item" target="_blank" title="Kanzaki's YouTube">
+            <div class="profile-icon profile-10"></div>
+            <p>Kanzaki</p>
+          </a>
         </article>
       </section>
       <!-- ini portofolio -->
 
       <!-- ini message us -->
 
-      <section>
+      <section id="message-us">
         <header>
           <h1>Message Us</h1>
+          <p>Feel free to reach out to us with your questions or feedback. We’d love to hear from you!</p>
         </header>
 
-        <article style="display: flex; justify-content: space-between; flex-direction: column">
-          <form>
-            <table>
-              <tr>
-                <td><label for="firstname">Firstname : </label></td>
-                <td><input type="text" id="firstname" required /></td>
-              </tr>
+        <article style="display: flex; justify-content: center; align-items: center; flex-direction: column">
+          <form class="message-form">
+            <div class="form-group">
+              <label for="firstname">First Name:</label>
+              <input type="text" id="firstname" placeholder="Enter your first name" required />
+            </div>
 
-              <tr>
-                <td><label for="lastname">Lastname : </label></td>
-                <td><input type="text" id="lastname" required /></td>
-              </tr>
-              <tr>
-                <td rowspan="2">
-                  <button type="button" onclick="nextSlide(1);">Submit</button>
-                </td>
-              </tr>
-            </table>
+            <div class="form-group">
+              <label for="lastname">Last Name:</label>
+              <input type="text" id="lastname" placeholder="Enter your last name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Enter your email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" placeholder="Enter the subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Send Message</button>
           </form>
 
-          <div id="result" style="border: 1px solid; height: 200px; width: 300px"></div>
+          <div id="result" class="message-result">
+            <p>Your submitted message will appear here after submission.</p>
+          </div>
         </article>
       </section>
     </main>

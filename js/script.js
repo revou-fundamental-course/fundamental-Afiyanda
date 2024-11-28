@@ -1,34 +1,21 @@
-// JavaScript
+document.querySelector(".message-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // Mencegah reload halaman
 
-function validateForm() {
-  let firstName = document.querySelector("#firstname").value;
-  let lastName = document.querySelector("#lastname").value;
+  const firstname = document.getElementById("firstname").value;
+  const lastname = document.getElementById("lastname").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
 
-  console.log(firstName);
-  console.log(lastName);
+  // Menampilkan pesan di dalam kotak hasil
+  const resultBox = document.getElementById("result");
+  resultBox.innerHTML = `
+    <p><strong>Name:</strong> ${firstname} ${lastname}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Subject:</strong> ${subject}</p>
+    <p><strong>Message:</strong> ${message}</p>
+  `;
 
-  if (firstName != "" && lastName != "") {
-    document.querySelector("#result").innerHTML = firstName + " " + lastName;
-  } else {
-    alert("inputan ada yang kosong");
-  }
-}
-let indexSlide = 1;
-showSlide(1);
-function nextSlide(n) {
-  showSlide((indexSlide += n));
-  console.log(indexSlide + "Ini NextSlide");
-}
-function showSlide(n) {
-  let listImage = document.getElementsByClassName("banner-item");
-  if (n >= listImage.length) indexSlide = 0;
-
-  let index = 0;
-  while (index < listImage.length) {
-    listImage[index].computedStyleMap.display = "none";
-    index++;
-  }
-
-  listImage[indexSlide - 1].computedStyleMap.display = "block";
-  console.log(indexSlide - 1 + "Ini ShowSlide");
-}
+  // Reset form setelah submit
+  document.querySelector(".message-form").reset();
+});
